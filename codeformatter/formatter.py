@@ -80,7 +80,7 @@ class Formatter:
 
         # Python
         opts = self.settings.get('codeformatter_python_options')
-        print(opts)
+        # print(opts)
         if ("syntaxes" in opts and opts["syntaxes"]):
             for _formatter in opts["syntaxes"].split(","):
                 self.classmap[_formatter.strip()] = PyFormatter
